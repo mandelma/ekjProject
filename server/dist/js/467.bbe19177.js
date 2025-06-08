@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkekj"]=self["webpackChunkekj"]||[]).push([[467],{4467:function(n,e,t){t.r(e),t.d(e,{default:function(){return k}});var u=t(6768);function r(n,e,t,r,a,c){const l=(0,u.g2)("MDBContainer");return(0,u.uX)(),(0,u.Wv)(l,null,{default:(0,u.k6)((()=>e[0]||(e[0]=[(0,u.Lk)("h2",null,"Palvelut",-1)]))),_:1,__:[0]})}var a=t(5846),c={name:"ekj-services",components:{MDBContainer:a.Dj}},l=t(1241);const s=(0,l.A)(c,[["render",r]]);var k=s}}]);
+//# sourceMappingURL=467.bbe19177.js.map
