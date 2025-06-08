@@ -115,14 +115,11 @@ export default {
         this.content = "";
 
         // name, email, message
-        const name = this.fullName;
-        const email = this.email;
-        const content = this.content;
 
         const mailContent = {
-          name,
-          email,
-          content
+          name: this.fullName,
+          email: this.email,
+          message: this.content
         };
 
         // Message to server
