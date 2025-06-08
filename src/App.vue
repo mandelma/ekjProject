@@ -24,8 +24,6 @@
 
     </nav>
   </div>
-
-  isMenuOpen {{isMenuOpen}}
   <router-view />
 </template>
 
