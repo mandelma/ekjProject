@@ -12,7 +12,7 @@
 
           <li><router-link to="/" @click="handleNav">HOME</router-link></li>
           <li><router-link to="/services" @click="handleNav">PALVELUT</router-link></li>
-          <li><router-link to="/contact" @click="handleNav">Ota yhteyttä</router-link></li>
+          <li><router-link to="/contact" @click="handleNav">OTA YHTEYTTÄ</router-link></li>
         </ul>
       </div>
 
@@ -144,6 +144,7 @@ export default {
 
 .navbar {
   display: flex;
+  background-color: #3f6161;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -181,7 +182,7 @@ li a {
   margin-left: 10px;
   margin-right: 10px;
   font-weight: 600;
-  color: #111211;
+  color: #dddddd;
   text-decoration: none;
   font-size: 18px;
 }

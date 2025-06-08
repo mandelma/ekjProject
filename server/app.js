@@ -2,18 +2,25 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const emailRouter = require('./routes/email');
 
 
-
-app.use(bodyParser.json());
 const corsOptions ={
     //origin: true,
     origin: '*',
-    credentials: true,            //access-control-allow-credentials:true
+    credentials: true,        //access-control-allow-credentials:true
     optionSuccessStatus: 200,
 }
 
+app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 app.use(cors(corsOptions));
+app.use('/api/email', emailRouter);
+
+
+
+
 app.use(express.static('dist'))
 
 if (process.env.RENDER === 'true') {
