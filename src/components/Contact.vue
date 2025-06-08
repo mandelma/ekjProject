@@ -110,12 +110,6 @@ export default {
           this.messageFieldError = null;
         }, 2000);
       } else {
-        this.fullName = "";
-        this.email = "";
-        this.content = "";
-
-        // name, email, message
-
         const mailContent = {
           name: this.fullName,
           email: this.email,
@@ -125,7 +119,9 @@ export default {
         // Message to server
         const sent = await mailService.sendEmail(mailContent);
         console.log("Mail sended? - " + sent);
-
+        this.fullName = "";
+        this.email = "";
+        this.content = "";
         this.messageSuccessNote = "Tiedot lähetetty onnistuneesti, kiitos!";
         setTimeout(() => {
           this.messageSuccessNote = null;
