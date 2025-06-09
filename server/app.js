@@ -3,7 +3,8 @@ const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const emailRouter = require('./routes/email');
-
+const history = require('connect-history-api-fallback');
+const path = require('path');
 
 const corsOptions ={
     //origin: true,
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(cors(corsOptions));
+app.use(history());
 app.use('/api/email', emailRouter);
 
 
