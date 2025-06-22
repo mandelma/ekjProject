@@ -1,6 +1,6 @@
 <template>
   <MDBContainer>
-    <div style=" width: 97%; margin: 13px auto; background-color: #2e3535; box-shadow: 0.3em 0.3em 1em rgba(104,101,101,0.6); border-radius: 5px; ">
+    <div style=" width: 97%; margin: 50px auto; background-color: #2e3535; box-shadow: 0.3em 0.3em 1em rgba(104,101,101,0.6); border-radius: 5px; ">
       <h3 style="color:#9fa6b2; padding-top: 12px; font-weight: 500;">Yhteydenotto lomake</h3>
 
 

@@ -15,6 +15,11 @@ const routes = [
         path: "/contact",
         name: "contact",
         component: () => import("../components/Contact")
+    },
+    {
+        path: "/reference",
+        name: "reference",
+        component: () => import("../components/Reference")
     }
 ];
 

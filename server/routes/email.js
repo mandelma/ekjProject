@@ -21,11 +21,21 @@ router.post('/', async(req, res) => {
 
     // Email options
     const mailOptions = {
-        from: email,
-        to: process.env.RECEIVER_EMAIL,
-        subject: `Viesti käyttäjältä ${name}`,
-        text: message
+        from: `"${name}" <${process.env.EMAIL_USER}>`, // Shown as the sender
+        replyTo: email, // When you hit "Reply", it goes to the real sender
+        to: process.env.EMAIL_USER, // Your address (or the receiver)
+        subject: `Message from ${name}`,
+        text: `Sender: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+
+
+
+        // from: email,
+        // to: process.env.RECEIVER_EMAIL,
+        // subject: `Viesti käyttäjältä ${name}`,
+        // text: message
     };
+
+
     try {
         await transporter.sendMail(mailOptions);
         res.status(200).json({ success: true, message: 'Email sent!' });
