@@ -1,37 +1,31 @@
 <template>
-  <div class="smaller-nav">
 
+  <nav class="nav">
+    <div id="logo" @click="handleNav">
+      <img src="./assets/nav-logo.png" alt="nav logo" style="width: 30px; cursor: pointer;" @click="$router.push('/')"/>
+    </div>
 
-    <nav  class="navbar">
-      <div id="logo" class="nav-left">
-        <img src="./assets/nav-logo.png" alt="nav logo" style="width: 30px; cursor: pointer;" @click="$router.push('/')"/>
-      </div>
+    <div class="nav-center-wrapper">
+      <ul id="Navigation" :style="{transition: 'all 1s'}" :class="{active: isMenuOpen}" class="nav-center">
 
-      <div class="nav-center-wrapper">
-        <ul id="Navigation" :style="{transition: 'all 1s'}" :class="{active: isMenuOpen}" class="nav-center">
+        <li><router-link to="/" @click="handleNav">Etusivu</router-link></li>
+        <li><router-link to="/services" @click="handleNav">Palvelut</router-link></li>
+        <li><router-link to="/reference" @click="handleNav">Referenssit</router-link></li>
+        <li><router-link to="/">Ajankohtaista</router-link></li>
+        <li><router-link to="/contact" @click="handleNav">Ota yhteyttä</router-link></li>
+      </ul>
 
-          <li><router-link to="/" @click="handleNav">Etusivu</router-link></li>
-          <li><router-link to="/services" @click="handleNav">Palvelut</router-link></li>
-          <li><router-link to="/reference" @click="handleNav">Referenssit</router-link></li>
-          <li><router-link to="/">Ajankohtaista</router-link></li>
-          <li><router-link to="/contact" @click="handleNav">Ota yhteyttä</router-link></li>
-        </ul>
-      </div>
+    </div>
+    <div class="menu-btn" :class="{active: isMenuOpen}" @click="toggleMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 
-      <div class="menu-btn" :class="{active: isMenuOpen}" @click="toggleMenu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-    </nav>
+  <div class="page">
+    <router-view />
   </div>
-
-  <div>
-
-  </div>
-
-
 
   <MDBFooter
       class="fixed-bottom"
@@ -39,41 +33,46 @@
       :text="['center', 'white']"
       style="background-color: #545e69;"
   >
-    <!-- Grid container -->
-    <MDBContainer class="p-4 pb-0">
-      <!-- Section: CTA -->
-      <section class="">
-        <MDBRow>
-          <MDBCol md="6" class="phoneFooter">
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>EKJ rakennus OY
-            </h6>
-            <p>
-              y tunnus:  235234-5
-            </p>
-          </MDBCol>
-          <MDBCol md="6">
-            <div >
-              <h6 class="text-uppercase fw-bold mb-4">Yhteystiedot</h6>
-              <p>
-                <i class="fas fa-home me-3"></i> Vantaa, Veturikuja 3
-              </p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@example.com
-              </p>
-              <p>
-                <MDBIcon icon="phone" class="me-3" /> + 358 234 567 88
-              </p>
-<!--              <p>-->
-<!--                <MDBIcon icon="print" class="me-3" /> + 01 234 567 89-->
-<!--              </p>-->
-            </div>
 
-          </MDBCol>
-        </MDBRow>
-      </section>
-    </MDBContainer>
+    <!-- Grid container -->
+    <div >
+      <MDBContainer class="p-4 pb-0">
+        <!-- Section: CTA -->
+        <section >
+          <MDBRow>
+            <MDBCol class="phoneFooter" md="6">
+              <h6 style="color: orange;" class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>EKJ rakennus OY
+              </h6>
+              <p>
+                y tunnus:  235234-5
+              </p>
+            </MDBCol>
+            <MDBCol md="6">
+              <div >
+                <h6 style="color: orange;" class="text-uppercase fw-bold mb-4">Yhteystiedot</h6>
+                <p>
+                  <i class="fas fa-home me-3"></i> Vantaa, Veturikuja 3
+                </p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@example.com
+                </p>
+                <p>
+                  <MDBIcon icon="phone" class="me-3" /> + 358 234 567 88
+                </p>
+                <!--              <p>-->
+                <!--                <MDBIcon icon="print" class="me-3" /> + 01 234 567 89-->
+                <!--              </p>-->
+              </div>
+
+            </MDBCol>
+          </MDBRow>
+        </section>
+
+      </MDBContainer>
+    </div>
+
     <!-- Copyright -->
     <div
         class="text-center p-3"
@@ -84,23 +83,17 @@
     <!-- Copyright -->
   </MDBFooter>
 
-
-  <div class="page">
-    <router-view  />
-  </div>
-
-
 </template>
 
 <script>
 /* eslint-disable */
 import {ref} from 'vue';
 import {
-    MDBFooter,
-    MDBContainer,
-    MDBRow,
-    MDBCol,
-    MDBIcon
+  MDBFooter,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBIcon
 } from 'mdb-vue-ui-kit';
 export default {
   name: 'App',
@@ -134,7 +127,7 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
-
+      // 3f6161
     },
     handleNav () {
       console.log("Nav handled");
@@ -166,20 +159,6 @@ export default {
   background-color: #637081;
   color: #dddddd;
   /*margin-top: 60px;*/
-}
-
-.page {
-  overflow-y: auto;
-  /* Hide scrollbar in Firefox */
-  scrollbar-width: none;
-
-  /* Hide scrollbar in IE 10+ */
-  -ms-overflow-style: none;
-}
-
-/* Hide scrollbar in Chrome, Safari and Edge */
-.page::-webkit-scrollbar {
-  display: none;
 }
 
 .menu-btn {
@@ -232,6 +211,8 @@ export default {
 
 /* Full screen menu */
 #Navigation {
+
+  /*position: fixed;*/
   /*display: flex;*/
   /*background-color: #536B78;*/
   /*padding: 12px;*/
@@ -239,18 +220,42 @@ export default {
   /*border: 1px solid #e600ff;*/
   /*list-style: none;*/
   /*z-index: 2;*/
+
+
 }
 
-.navbar {
+.nav {
+  position: fixed;     /* Stick it to the top */
+  top: 0;              /* Align to top */
+  left: 0;
+  width: 100%;         /* Full width */
+  height: 60px;        /* Or whatever your nav height is */
+  background-color: #566373; /* Set background to avoid transparency over content */
+  z-index: 9999;       /* Very high z-index to stay on top of all elements */
   display: flex;
-  background-color: #3f6161;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  width: 100%;
-  /*padding: 0 1rem;*/
-  box-sizing: border-box;
+  padding: 0 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
 }
+
+.page {
+  padding-top: 60px;
+  padding-bottom: 270px;
+}
+
+/*.navbar {*/
+/*  position: sticky;*/
+/*  !*display: flex;*!*/
+/*  !*!*background-color: #3f6161;*!*!*/
+/*  background-color: red;*/
+/*  !*align-items: center;*!*/
+/*  !*justify-content: space-between;*!*/
+/*  !*!*position: relative;*!*!*/
+/*  !*width: 100%;*!*/
+/*  !*!*padding: 0 1rem;*!*!*/
+/*  !*box-sizing: border-box;*!*/
+/*}*/
 
 .nav-left {
   font-weight: bold;
@@ -288,7 +293,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #395558;
+  background-color: #4b5561;
   color: #5fb0bc;
 }
 
@@ -298,11 +303,11 @@ li a:hover {
   #Navigation {
     position: fixed;
     display: block;
-    top: 67px;
+    top: 60px;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: #3f6161;
+    height: 63%;
+    background-color: #4d5661;
     transform: translateX(-100%);
     transition: width 1s;
     z-index: 2;
@@ -320,12 +325,14 @@ li a:hover {
     padding-top: 20px;
   }
   #Navigation li a:hover {
-    color: white;
+    background-color: #3a4047;
+    padding: 13px;
+    color: #5fb0bc;
   }
-  .smaller-nav {
-    display: flex;
-    flex-direction: column;
-  }
+  /*.smaller-nav {*/
+  /*  display: flex;*/
+  /*  flex-direction: column;*/
+  /*}*/
   .menu-btn {
     display: block;
     cursor: pointer;
@@ -333,12 +340,14 @@ li a:hover {
   #Navigation.active {
     transform: translateX(0);
   }
+  .page {
+    padding-top: 60px;
+
+  }
   .phoneFooter {
     display: none;
   }
-  .page {
-    padding-bottom: 270px;
-  }
+
 
 }
 .no-transition * {

@@ -1,6 +1,6 @@
 <template>
   <MDBContainer>
-    <div class="pages">
+    <div >
       <h2 style="padding-top: 13px; color: #83bfc6;">Palvelut</h2>
       <MDBRow>
         <MDBCol sm="6">
@@ -18,16 +18,6 @@
             </MDBCard>
           </div>
 
-        </MDBCol>
-        <MDBCol sm="6">
-          <MDBCard text="white" bg="secondary" class="mb-3">
-            <MDBCardBody>
-              <MDBCardTitle class="service-title">Special title treatment</MDBCardTitle>
-              <MDBCardText class="service-text">
-                With supporting text below as a natural lead-in to additional content.
-              </MDBCardText>
-            </MDBCardBody>
-          </MDBCard>
         </MDBCol>
         <MDBCol sm="6">
           <MDBCard text="white" bg="secondary" class="mb-3">

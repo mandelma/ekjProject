@@ -1,7 +1,7 @@
 <template>
   <MDBContainer>
-    <div style=" width: 97%; margin: 50px auto; background-color: #2e3535; box-shadow: 0.3em 0.3em 1em rgba(104,101,101,0.6); border-radius: 5px; ">
-      <h3 style="color:#9fa6b2; padding-top: 12px; font-weight: 500;">Yhteydenotto lomake</h3>
+    <div style=" width: 97%; margin: 50px auto; background-color: #4d5661; box-shadow: 0.3em 0.3em 1em rgba(104,101,101,0.6); border-radius: 5px; ">
+      <h3 style="color:#9fa6b2; padding-top: 17px; font-weight: 500;">Yhteydenotto lomake</h3>
 
 
       <form style="padding: 13px;">
@@ -145,7 +145,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  box-shadow: 0 0 0 1000px #2e3535 inset !important; /* or your desired background */
+  box-shadow: 0 0 0 1000px #4d5661 inset !important; /* or your desired background */
   -webkit-text-fill-color: #dddddd !important; /* your desired text color */
   caret-color: #dddddd !important;
   transition: background-color 5000s ease-in-out 0s;

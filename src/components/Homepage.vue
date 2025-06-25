@@ -1,8 +1,11 @@
 <template>
   <MDBContainer>
-    <img src="../assets/ekj_dark_theme.png" style="width: 50%; max-width: 400px; margin: auto;" alt="ekj" />
-    <div style="width: 70%; margin: auto;">
-      <p style="font-size: 17px;">
+    <div style="border-bottom: 1px solid orange;">
+      <img src="../assets/ekj_dark_theme.png" style="width: 50%; max-width: 400px; margin: auto;" alt="ekj" />
+    </div>
+
+    <div style="width: 70%; padding-top: 33px;  margin: auto;">
+      <p style="font-size: 22px;">
         EKJ Rakennuspalvelut on huoneisto- ja julkisivusaneerausten, kylpyhuoneremonttien sekä lattia-
         ja maalaustöiden asiantuntija. Hoidamme kaikki rakennusalan työt niin omakoti- kuin kerrostaloissa
         sekä julkisissa kiinteistöissä.
