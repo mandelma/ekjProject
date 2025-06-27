@@ -7,10 +7,10 @@
           <div>
             <MDBCard  text="white" bg="secondary" class="mb-3">
               <MDBCardBody>
-                <MDBCardTitle class="service-title">Special title treatment</MDBCardTitle>
+                <MDBCardTitle class="service-title">Palvelun otsikko</MDBCardTitle>
                 <MDBCardText >
                   <div class="service-text">
-                    With supporting text below as a natural lead-in to additional content.
+                    Palvelun kuvaus - yksityiskohdat, tärkkeimmät asiat ja muut tarvittavat tiedot.
                   </div>
 
                 </MDBCardText>
@@ -22,9 +22,9 @@
         <MDBCol sm="6">
           <MDBCard text="white" bg="secondary" class="mb-3">
             <MDBCardBody>
-              <MDBCardTitle class="service-title">Special title treatment</MDBCardTitle>
+              <MDBCardTitle class="service-title">Palvelun otsikko</MDBCardTitle>
               <MDBCardText class="service-text">
-                With supporting text below as a natural lead-in to additional content.
+                Palvelun kuvaus - yksityiskohdat, tärkkeimmät asiat ja muut tarvittavat tiedot.
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>
@@ -32,9 +32,9 @@
         <MDBCol sm="6">
           <MDBCard text="white" bg="secondary" class="mb-3">
             <MDBCardBody>
-              <MDBCardTitle class="service-title">Special title treatment</MDBCardTitle>
+              <MDBCardTitle class="service-title">Palvelun otsikko</MDBCardTitle>
               <MDBCardText class="service-text">
-                With supporting text below as a natural lead-in to additional content.
+                Palvelun kuvaus - yksityiskohdat, tärkkeimmät asiat ja muut tarvittavat tiedot.
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>
@@ -42,9 +42,9 @@
         <MDBCol sm="6">
           <MDBCard text="white" bg="secondary" class="mb-3">
             <MDBCardBody>
-              <MDBCardTitle class="service-title">Special title treatment</MDBCardTitle>
+              <MDBCardTitle class="service-title">Palvelun otsikko</MDBCardTitle>
               <MDBCardText class="service-text">
-                With supporting text below as a natural lead-in to additional content.
+                Palvelun kuvaus - yksityiskohdat, tärkkeimmät asiat ja muut tarvittavat tiedot.
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>

@@ -50,11 +50,11 @@
             </MDBCol>
             <MDBCol md="6">
               <div >
-                <h6 style="color: orange;" class="text-uppercase fw-bold mb-4">Yhteystiedot</h6>
-                <p>
+                <h6 style="color: orange; cursor: pointer;" class="text-uppercase fw-bold mb-4" @click="$router.push('/contact')">Yhteystiedot</h6>
+                <p class="phoneFooter">
                   <i class="fas fa-home me-3"></i> Vantaa, Veturikuja 3
                 </p>
-                <p>
+                <p class="phoneFooter">
                   <i class="fas fa-envelope me-3"></i>
                   info@example.com
                 </p>
@@ -212,15 +212,6 @@ export default {
 /* Full screen menu */
 #Navigation {
 
-  /*position: fixed;*/
-  /*display: flex;*/
-  /*background-color: #536B78;*/
-  /*padding: 12px;*/
-  /*justify-content: center;*/
-  /*border: 1px solid #e600ff;*/
-  /*list-style: none;*/
-  /*z-index: 2;*/
-
 
 }
 
@@ -243,19 +234,6 @@ export default {
   padding-top: 60px;
   padding-bottom: 270px;
 }
-
-/*.navbar {*/
-/*  position: sticky;*/
-/*  !*display: flex;*!*/
-/*  !*!*background-color: #3f6161;*!*!*/
-/*  background-color: red;*/
-/*  !*align-items: center;*!*/
-/*  !*justify-content: space-between;*!*/
-/*  !*!*position: relative;*!*!*/
-/*  !*width: 100%;*!*/
-/*  !*!*padding: 0 1rem;*!*!*/
-/*  !*box-sizing: border-box;*!*/
-/*}*/
 
 .nav-left {
   font-weight: bold;
@@ -305,7 +283,7 @@ li a:hover {
     display: block;
     top: 60px;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 63%;
     background-color: #4d5661;
     transform: translateX(-100%);

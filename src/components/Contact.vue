@@ -36,11 +36,13 @@
         <!-- Message input -->
         <MDBTextarea
             white
+            maxlength="70"
             label="Message"
             id="form4Textarea"
             v-model="content"
             wrapperClass="mb-4"
         />
+        <span class="message-counter">{{ content.length }} / 70</span>
 
         <!-- Checkbox -->
 
@@ -149,6 +151,12 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: #dddddd !important; /* your desired text color */
   caret-color: #dddddd !important;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+.message-counter {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 7px;
 }
 
 </style>
