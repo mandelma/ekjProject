@@ -17,7 +17,7 @@
         <MDBInput
             white
             type="text"
-            label="Name"
+            label="Nimi"
             id="form4Name"
             v-model="fullName"
             wrapperClass="mb-4"
@@ -27,7 +27,7 @@
         <MDBInput
             white
             type="email"
-            label="Email address"
+            label="Sähköposti"
             id="form4Email"
             v-model="email"
             wrapperClass="mb-4"
@@ -37,7 +37,7 @@
         <MDBTextarea
             white
             maxlength="70"
-            label="Message"
+            label="Viesti..."
             id="form4Textarea"
             v-model="content"
             wrapperClass="mb-4"
