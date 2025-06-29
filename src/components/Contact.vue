@@ -7,7 +7,6 @@
       <form style="padding: 13px;">
 
         <div class="notification-field">
-          <success-message :message = messageSuccessNote />
           <error-message :message = nameFieldError />
           <error-message :message = emailFieldError />
           <error-message :message = messageFieldError />
@@ -47,6 +46,10 @@
         <!-- Checkbox -->
 
         <!-- Submit button -->
+        <div class="notification-field">
+          <success-message :message = messageSuccessNote />
+        </div>
+
         <MDBBtn outline="info" block class="mb-4" @click="submitMessage"> Lähettää </MDBBtn>
       </form>
     </div>
