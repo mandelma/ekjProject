@@ -28,7 +28,6 @@
   </div>
 
   <MDBFooter
-      class="fixed-bottom"
       bg="none"
       :text="['center', 'white']"
       style="background-color: #545e69;"
@@ -211,7 +210,7 @@ export default {
 
 /* Full screen menu */
 #Navigation {
-
+  padding: 20px;
 
 }
 
@@ -232,7 +231,7 @@ export default {
 
 .page {
   padding-top: 60px;
-  padding-bottom: 270px;
+  padding-bottom: 120px;
 }
 
 .nav-left {
@@ -260,10 +259,11 @@ export default {
   padding: 13px;
 }
 
+
 li a {
   margin-left: 10px;
   margin-right: 10px;
-  padding: 7px;
+  padding: 13px;
   font-weight: 600;
   color: #dddddd;
   text-decoration: none;
@@ -271,8 +271,8 @@ li a {
 }
 
 li a:hover {
-  background-color: #4b5561;
-  color: #5fb0bc;
+  /*background-color: #4b5561;*/
+  color: #e7c581;
 }
 
 
@@ -305,7 +305,7 @@ li a:hover {
   #Navigation li a:hover {
     background-color: #3a4047;
     padding: 13px;
-    color: #5fb0bc;
+    color: #f7ca73;
   }
   /*.smaller-nav {*/
   /*  display: flex;*/

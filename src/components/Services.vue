@@ -1,7 +1,7 @@
 <template>
   <MDBContainer>
     <div >
-      <h2 style="padding-top: 13px; color: #83bfc6;">Palvelut</h2>
+      <h2 style="padding-top: 33px; padding-bottom: 23px; color: #83bfc6;">Palvelut</h2>
       <MDBRow>
         <MDBCol sm="6">
           <div>
@@ -88,10 +88,12 @@ export default {
 }
 
 .service-title {
-  color: #436265;
+  font-size: 24px;
+  font-weight: bold;
+  color: #406266;
 }
 .service-text {
-  color: #dddddd;
+  color: white;
 }
 .service-text :hover{
   transition: font-size 2s;
