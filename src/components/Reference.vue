@@ -2,7 +2,7 @@
   <MDBContainer>
     <div style="margin-top: 33px;">
 
-      <h2 style="padding-bottom: 23px;">Referenssit</h2>
+      <h2 ref="reference" tabindex="-1" style="padding-bottom: 23px;">Referenssit</h2>
 
       <MDBRow>
         <MDBCol md="6">

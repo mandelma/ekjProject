@@ -20,6 +20,11 @@ const routes = [
         path: "/reference",
         name: "reference",
         component: () => import("../components/Reference")
+    },
+    {
+        path: "/about",
+        name: "about-page",
+        component: () => import("../components/About")
     }
 ];
 

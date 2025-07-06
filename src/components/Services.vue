@@ -1,7 +1,7 @@
 <template>
   <MDBContainer>
     <div >
-      <h2 style="padding-top: 33px; padding-bottom: 23px; color: #83bfc6;">Palvelut</h2>
+      <h2 ref="service" tabindex="-1" style="padding-top: 33px; padding-bottom: 23px; color: #f4cf8d;">Palvelut</h2>
       <MDBRow>
         <MDBCol sm="6">
           <div>
@@ -78,7 +78,12 @@ export default {
     MDBCardBody,
     MDBCardText,
     MDBCardTitle,
-  }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$refs.service.focus();
+    });
+  },
 }
 </script>
 

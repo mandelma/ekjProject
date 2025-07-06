@@ -11,7 +11,7 @@
         <li><router-link to="/" @click="handleNav">Etusivu</router-link></li>
         <li><router-link to="/services" @click="handleNav">Palvelut</router-link></li>
         <li><router-link to="/reference" @click="handleNav">Referenssit</router-link></li>
-        <li><router-link to="/">Ajankohtaista</router-link></li>
+        <li><router-link to="/about" @click="handleNav">Ajankohtaista</router-link></li>
         <li><router-link to="/contact" @click="handleNav">Ota yhteyttä</router-link></li>
       </ul>
 
@@ -127,6 +127,13 @@ export default {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
       // 3f6161
+    },
+    handleNavLogo () {
+      console.log("Nav logo handled");
+      this.$nextTick(() => {
+        this.isMenuOpen = false; // close menu after clicking a nav item
+        this.$refs.homepage?.focus(); // use optional chaining to avoid errors
+      });
     },
     handleNav () {
       console.log("Nav handled");

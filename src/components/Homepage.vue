@@ -1,6 +1,6 @@
 <template>
   <MDBContainer>
-    <div style="border-bottom: 1px solid orange;">
+    <div ref="homepage" style="border-bottom: 1px solid orange;">
       <img src="../assets/ekj_dark_theme.png" style="width: 50%; max-width: 400px; margin: auto;" alt="ekj" />
     </div>
 
@@ -21,7 +21,12 @@ export default {
   name: "home-page",
   components: {
     MDBContainer
-  }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$refs.homepage.focus();
+    });
+  },
 }
 </script>
 

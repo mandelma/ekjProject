@@ -1,15 +1,24 @@
 <template>
   <MDBContainer>
     <div style=" width: 97%; margin: 70px auto; background-color: #4d5661; box-shadow: 0.3em 0.3em 1em rgba(104,101,101,0.6); border-radius: 5px; ">
-      <h3 style="color:#9fa6b2; padding-top: 17px; font-weight: 500;">Yhteydenotto lomake</h3>
+      <h3 ref="contact" tabindex="-1" style="color:orange; padding-top: 17px; font-weight: 500;">Yhteydenotto lomake</h3>
 
 
       <form style="padding: 13px;">
 
         <div class="notification-field">
-          <error-message :message = nameFieldError />
-          <error-message :message = emailFieldError />
-          <error-message :message = messageFieldError />
+          <div v-if="messageSuccessNote" ref="toast" tabindex="-1">
+            <success-message :message = messageSuccessNote />
+          </div>
+          <div v-if="nameFieldError" ref="toast" tabindex="-1">
+            <error-message :message = nameFieldError />
+          </div>
+          <div v-if="emailFieldError" ref="toast" tabindex="-1">
+            <error-message :message = emailFieldError />
+          </div>
+          <div v-if="messageFieldError" ref="toast" tabindex="-1">
+            <error-message :message = messageFieldError />
+          </div>
         </div>
 
         <!-- Name input -->
@@ -46,9 +55,12 @@
         <!-- Checkbox -->
 
         <!-- Submit button -->
-        <div class="notification-field">
-          <success-message :message = messageSuccessNote />
-        </div>
+
+
+
+<!--        <div class="notification-field">-->
+<!--          <success-message :message = messageSuccessNote />-->
+<!--        </div>-->
 
         <MDBBtn outline="info" block class="mb-4" @click="submitMessage"> Lähettää </MDBBtn>
       </form>
@@ -96,20 +108,35 @@ export default {
       messageSuccessNote
     }
   },
+  mounted() {
+    this.$nextTick(() => {
+      this.$refs.contact.focus();
+    });
+  },
   methods: {
     async submitMessage () {
       if (this.fullName === "") {
         this.nameFieldError = "Sisestää oma nimi!";
+        this.$nextTick(() => {
+          this.$refs.toast?.focus(); // use optional chaining to avoid errors
+        });
         setTimeout(() => {
           this.nameFieldError = null;
+
         }, 2000);
       } else if (!/^[^@]+@\w+(\.\w+)+\w$/.test(this.email)) {
         this.emailFieldError = "Anna kelvollinen sähköpostin osoite!";
+        this.$nextTick(() => {
+          this.$refs.toast?.focus(); // use optional chaining to avoid errors
+        });
         setTimeout(() => {
           this.emailFieldError = null;
         }, 2000);
       } else if (this.content === "") {
         this.messageFieldError = "Sisestää jotain!";
+        this.$nextTick(() => {
+          this.$refs.toast?.focus(); // use optional chaining to avoid errors
+        });
         setTimeout(() => {
           this.messageFieldError = null;
         }, 2000);
@@ -127,6 +154,9 @@ export default {
         this.email = "";
         this.content = "";
         this.messageSuccessNote = "Tiedot lähetetty onnistuneesti, kiitos!";
+        this.$nextTick(() => {
+          this.$refs.toast?.focus(); // use optional chaining to avoid errors
+        });
         setTimeout(() => {
           this.messageSuccessNote = null;
         }, 3000);
