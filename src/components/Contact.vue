@@ -118,7 +118,7 @@ export default {
       if (this.fullName === "") {
         this.nameFieldError = "Sisestää oma nimi!";
         this.$nextTick(() => {
-          this.$refs.toast?.focus(); // use optional chaining to avoid errors
+          this.$refs.contact?.focus(); // use optional chaining to avoid errors
         });
         setTimeout(() => {
           this.nameFieldError = null;
@@ -127,7 +127,7 @@ export default {
       } else if (!/^[^@]+@\w+(\.\w+)+\w$/.test(this.email)) {
         this.emailFieldError = "Anna kelvollinen sähköpostin osoite!";
         this.$nextTick(() => {
-          this.$refs.toast?.focus(); // use optional chaining to avoid errors
+          this.$refs.contact?.focus(); // use optional chaining to avoid errors
         });
         setTimeout(() => {
           this.emailFieldError = null;
@@ -135,7 +135,7 @@ export default {
       } else if (this.content === "") {
         this.messageFieldError = "Sisestää jotain!";
         this.$nextTick(() => {
-          this.$refs.toast?.focus(); // use optional chaining to avoid errors
+          this.$refs.contact?.focus(); // use optional chaining to avoid errors
         });
         setTimeout(() => {
           this.messageFieldError = null;
@@ -155,7 +155,7 @@ export default {
         this.content = "";
         this.messageSuccessNote = "Tiedot lähetetty onnistuneesti, kiitos!";
         this.$nextTick(() => {
-          this.$refs.toast?.focus(); // use optional chaining to avoid errors
+          this.$refs.contact?.focus(); // use optional chaining to avoid errors
         });
         setTimeout(() => {
           this.messageSuccessNote = null;
