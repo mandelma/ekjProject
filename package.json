@@ -17,11 +17,18 @@
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3"
+  },
+  "overrides": {
+    "brace-expansion": "^1.1.12",
+    "cross-spawn": "^6.0.6",
+    "execa": "^0.10.0",
+    "postcss": "^8.4.31",
+    "webpack-dev-server": "^5.2.1"
   },
   "eslintConfig": {
     "root": true,

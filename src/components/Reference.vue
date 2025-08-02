@@ -229,6 +229,8 @@ export default {
   },
   methods: {
     setZoomedImg (img) {
+      // 16 vulnerabilities (3 low, 8 moderate, 4 high, 1 critical)
+      // server:
       console.log("Zoomed...");
       this.fullImage = img;
     }

@@ -191,5 +191,8 @@ select:-webkit-autofill:focus {
   justify-content: right;
   padding-bottom: 7px;
 }
+h3:focus:not(:focus-visible) {
+  outline: none;
+}
 
 </style>
