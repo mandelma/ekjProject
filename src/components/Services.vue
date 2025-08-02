@@ -1,7 +1,7 @@
 <template>
   <MDBContainer>
     <div >
-      <h2 ref="service" tabindex="-1" style="padding-top: 33px; padding-bottom: 23px; color: #f4cf8d;">Palvelut</h2>
+      <h2 class="service-focus" ref="service" tabindex="-1" style="padding-top: 33px; padding-bottom: 23px; color: #f4cf8d;">Palvelut</h2>
       <MDBRow>
         <MDBCol sm="6">
           <div>
@@ -87,9 +87,11 @@ export default {
 }
 </script>
 
-<style scoped>
-.service {
-  /*font-size: 11px;*/
+<style>
+.service-focus:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .service-title {
@@ -103,6 +105,5 @@ export default {
 .service-text :hover{
   transition: font-size 2s;
   font-size: 17px;
-
 }
 </style>

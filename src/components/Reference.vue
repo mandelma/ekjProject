@@ -2,7 +2,7 @@
   <MDBContainer>
     <div style="margin-top: 33px;" v-if="!fullImage">
 
-      <h2 ref="reference" tabindex="-1" style="padding-bottom: 23px;">Referenssit</h2>
+      <h2 class="reference-focus" ref="reference" tabindex="-1" style="padding-bottom: 23px;">Referenssit</h2>
 
       <MDBRow>
         <MDBCol md="6">
@@ -239,6 +239,11 @@ export default {
 </script>
 
 <style scoped>
+.reference-focus:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
 .imageFocus {
   cursor: pointer;
 }

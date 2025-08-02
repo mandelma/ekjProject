@@ -1,6 +1,6 @@
 <template>
   <MDBContainer>
-    <h2 ref="about" tabindex="-1" style="padding: 17px 0 17px 0;">Ajankohtaista</h2>
+    <h2 class="about-focus" ref="about" tabindex="-1" style="padding: 17px 0 17px 0;">Ajankohtaista</h2>
     <MDBRow>
       <MDBCol>
         <MDBCard text="white" bg="secondary" class="mb-3" style="min-height: 200px; max-width: 100%; padding: 10px;">
@@ -77,5 +77,9 @@ export default {
 </script>
 
 <style scoped>
-
+.about-focus:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
 </style>
