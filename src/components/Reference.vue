@@ -107,9 +107,9 @@
                     </ul>
 
                   </MDBCardText>
-                  <!--                  <MDBCardText>-->
-                  <!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
-                  <!--                  </MDBCardText>-->
+<!--                  <MDBCardText>-->
+<!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
+<!--                  </MDBCardText>-->
                 </MDBCardBody>
               </MDBCol>
             </MDBRow>

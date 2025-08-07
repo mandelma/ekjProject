@@ -7,12 +7,21 @@
           <div>
             <MDBCard  text="white" bg="secondary" class="mb-3">
               <MDBCardBody>
-                <MDBCardTitle class="service-title">Palvelun otsikko</MDBCardTitle>
+                <MDBCardTitle class="service-title">Laatoitus</MDBCardTitle>
                 <MDBCardText >
                   <div class="service-text">
-                    Palvelun kuvaus - yksityiskohdat, tärkkeimmät asiat ja muut tarvittavat tiedot.
+                    Kylpyhuoneiden, keittiön välitilojen sekä lattioiden laadoitus, saumaus ja silikonien asennus. Lattiakaatojen valu.
+                    pintojen valmistelu ja vesieristys.
                   </div>
 
+                </MDBCardText>
+                <MDBCardText>
+                  <small
+                      style="display: flex; justify-content: right; color: #f4cf8d; cursor: pointer;"
+                      @click="$router.push('/contact')"
+                  >
+                    Ota yhteyttä
+                  </small>
                 </MDBCardText>
               </MDBCardBody>
             </MDBCard>
@@ -22,30 +31,53 @@
         <MDBCol sm="6">
           <MDBCard text="white" bg="secondary" class="mb-3">
             <MDBCardBody>
-              <MDBCardTitle class="service-title">Palvelun otsikko</MDBCardTitle>
+              <MDBCardTitle class="service-title">Maalaus</MDBCardTitle>
               <MDBCardText class="service-text">
-                Palvelun kuvaus - yksityiskohdat, tärkkeimmät asiat ja muut tarvittavat tiedot.
+                sisä- ja ulkojulkisivujen maalaus sekä tasoitustyöt.
               </MDBCardText>
+              <small
+                  style="display: flex; justify-content: right; color: #f4cf8d; cursor: pointer;"
+                  @click="$router.push('/contact')"
+              >
+                Ota yhteyttä
+              </small>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
         <MDBCol sm="6">
           <MDBCard text="white" bg="secondary" class="mb-3">
             <MDBCardBody>
-              <MDBCardTitle class="service-title">Palvelun otsikko</MDBCardTitle>
+              <MDBCardTitle class="service-title">Kipsiasennus</MDBCardTitle>
               <MDBCardText class="service-text">
-                Palvelun kuvaus - yksityiskohdat, tärkkeimmät asiat ja muut tarvittavat tiedot.
+                Sisätilojen seinien, koteloiden sekä katojen rakennus ja tasoitustyöt.
               </MDBCardText>
+              <small
+                  style="display: flex; justify-content: right; color: #f4cf8d; cursor: pointer;"
+                  @click="$router.push('/contact')"
+              >
+                Ota yhteyttä
+              </small>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
         <MDBCol sm="6">
           <MDBCard text="white" bg="secondary" class="mb-3">
             <MDBCardBody>
-              <MDBCardTitle class="service-title">Palvelun otsikko</MDBCardTitle>
-              <MDBCardText class="service-text">
-                Palvelun kuvaus - yksityiskohdat, tärkkeimmät asiat ja muut tarvittavat tiedot.
+              <MDBCardTitle class="service-title">Kattojen teko ja korjaus</MDBCardTitle>
+              <MDBCardText class="service-text" style="text-align: left;">
+                <ul>
+                  <li>Tervakatot</li>
+                  <li>Peltikatot</li>
+                  <li>Kivikatot</li>
+                  <li>Sadevesijärjestelmien asennus</li>
+                </ul>
               </MDBCardText>
+              <small
+                  style="display: flex; justify-content: right; color: #f4cf8d; cursor: pointer;"
+                  @click="$router.push('/contact')"
+              >
+                Ota yhteyttä
+              </small>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -103,7 +135,7 @@ export default {
   color: white;
 }
 .service-text :hover{
-  transition: font-size 2s;
-  font-size: 17px;
+  /*transition: font-size 2s;*/
+  /*font-size: 17px;*/
 }
 </style>
