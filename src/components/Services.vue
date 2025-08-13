@@ -1,7 +1,7 @@
 <template>
   <MDBContainer>
     <div >
-      <h2 class="service-focus" ref="service" tabindex="-1" style="padding-top: 33px; padding-bottom: 23px; color: #f4cf8d;">Test Palvelut</h2>
+      <h2 class="service-focus" ref="service" tabindex="-1" style="padding-top: 33px; padding-bottom: 23px; color: #f4cf8d;">Palvelut</h2>
       <MDBRow>
         <MDBCol sm="6">
           <div>

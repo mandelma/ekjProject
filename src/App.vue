@@ -55,10 +55,10 @@
                 </p>
                 <p class="phoneFooter">
                   <i class="fas fa-envelope me-3"></i>
-                  info@example.com
+                  info@ekjrakennus.fi
                 </p>
                 <p>
-                  <MDBIcon icon="phone" class="me-3" /> + 358 234 567 88
+                  <MDBIcon icon="phone" class="me-3" /> + 358 45 247 0909
                 </p>
                 <!--              <p>-->
                 <!--                <MDBIcon icon="print" class="me-3" /> + 01 234 567 89-->

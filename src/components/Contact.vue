@@ -1,7 +1,7 @@
 <template>
   <MDBContainer>
     <div style=" width: 97%; margin: 70px auto; background-color: #4d5661; box-shadow: 0.3em 0.3em 1em rgba(104,101,101,0.6); border-radius: 5px; ">
-      <h3 class="contact-focus" ref="contact" tabindex="-1" style="color:orange; padding-top: 17px; font-weight: 500;">Test Yhteydenotto lomake</h3>
+      <h3 class="contact-focus" ref="contact" tabindex="-1" style="color:orange; padding-top: 17px; font-weight: 500;">Yhteydenotto lomake</h3>
 
 
       <form style="padding: 13px;">
