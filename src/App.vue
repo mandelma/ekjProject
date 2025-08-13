@@ -49,11 +49,12 @@
             </MDBCol>
             <MDBCol md="6">
               <div >
-                <h6 style="color: orange; cursor: pointer;" class="text-uppercase fw-bold mb-4" @click="$router.push('/contact')">Yhteystiedot</h6>
+                <p style="color: orange; cursor: pointer;" class="text-uppercase fw-bold mb-4" @click="$router.push('/contact')">Yhteystiedot</p>
                 <p class="phoneFooter">
                   <i class="fas fa-home me-3"></i> Vantaa, Veturikuja 3
                 </p>
-                <p class="phoneFooter">
+<!--                class="phoneFooter"-->
+                <p>
                   <i class="fas fa-envelope me-3"></i>
                   info@ekjrakennus.fi
                 </p>
